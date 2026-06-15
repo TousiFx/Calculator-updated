@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="/Calculator/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="diplay-area">
+          <input type="text" id="display" readonly placeholder="0" />
+        </div>
+
+        <div class="button">
+          <button onclick="cleanNum()">C</button>
+          <button onclick="cleanDel()">DEL</button>
+          <button onclick="appealNum('%')">%</button>
+          <button onclick="appealNum('/')">/</button>
+
+          <button onclick="appealNum('7')">7</button>
+          <button onclick="appealNum('8')">8</button>
+          <button onclick="appealNum('9')">9</button>
+          <button onclick="appealNum('*')">*</button>
+
+          <button onclick="appealNum('4')">4</button>
+          <button onclick="appealNum('5')">5</button>
+          <button onclick="appealNum('6')">6</button>
+          <button onclick="appealNum('-')">-</button>
+
+          <button onclick="appealNum('1')">1</button>
+          <button onclick="appealNum('2')">2</button>
+          <button onclick="appealNum('3')">3</button>
+          <button onclick="appealNum('+')">+</button>
+
+          <button onclick="appealNum('0')">0</button>
+          <button onclick="appealNum('.')">.</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="/Calculator/script.js"></script>
+  </body>
+</html>
